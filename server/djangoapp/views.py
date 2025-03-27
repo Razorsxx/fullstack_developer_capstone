@@ -116,14 +116,14 @@ def get_dealer_details(request, dealer_id):
     else:
         return JsonResponse({"status": 400, "message": "Bad Request"})
 
-
+@csrf_exempt
 # Create a `add_review` view to submit a review
 def add_review(request):
     # ...
     if (request.user.is_anonymous is False):
         data = json.loads(request.body)
         try:
-            post_review(data)
+            response = post_review(data)
             return JsonResponse({"status": 200})
         except Exception as err:
             logger.error(f"Unexpected error: {err}")
