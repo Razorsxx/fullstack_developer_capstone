@@ -31,13 +31,13 @@ def initiate():
             "car_make": car_make_instances[0]
         },
         {
-                "name": "XTRAIL",
+            "name": "XTRAIL",
             "type": "SUV",
             "year": 2023,
             "car_make": car_make_instances[0]
         },
         {
-                "name": "A-Class",
+            "name": "A-Class",
             "type": "SUV",
             "year": 2023,
             "car_make": car_make_instances[1]
