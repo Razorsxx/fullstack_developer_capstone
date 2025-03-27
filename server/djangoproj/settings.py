@@ -29,7 +29,7 @@ SECRET_KEY =\
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    'localhost', 
+    'localhost',
     (
         'https://anielorenci1-8000.theiadockernext-0-labs-prod-'
         'theiak8s-4-tor01.proxy.cognitiveclass.ai'
@@ -104,10 +104,9 @@ DATABASES = {
 
 AUTH_PASSWORD_VALIDATORS = [
     {
-        'NAME': 
-        (
+        'NAME': (
             'django.contrib.auth.password_validation.'
-        'UserAttributeSimilarityValidator'
+            'UserAttributeSimilarityValidator'
         ),
     },
     {
